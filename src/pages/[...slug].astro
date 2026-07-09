@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+
+export function getStaticPaths() {
+  const paths = [
+    { slug: 'produtos/portas-e-janelas', title: 'Portas e Janelas' },
+    { slug: 'produtos/portas-e-janelas/portas', title: 'Portas' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-premium', title: 'Portas Premium' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-gold', title: 'Portas Gold' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-pop', title: 'Portas Pop' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-sacadas', title: 'Portas Sacadas' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-internas', title: 'Portas Internas' },
+    { slug: 'produtos/portas-e-janelas/janelas', title: 'Janelas' },
+    { slug: 'produtos/portas-e-janelas/janelas/janelas-gold', title: 'Janelas Gold' },
+    { slug: 'produtos/portas-e-janelas/janelas/janelas-pop', title: 'Janelas Pop' },
+    { slug: 'produtos/portas-e-janelas/vitros', title: 'Vitrôs' },
+    { slug: 'produtos/moveis-de-jardim', title: 'Móveis de Jardim' },
+    { slug: 'produtos/portas-internas', title: 'Portas Internas' },
+    { slug: 'trabalhe-conosco', title: 'Trabalhe Conosco' }
+  ];
+
+  return paths.map(p => ({
+    params: { slug: p.slug },
+    props: { title: p.title }
+  }));
+}
+
+const { title } = Astro.props;
+---
+
+<Layout title={`${title} - Esel`}>
+  <Header />
+
+  <!-- BANNER INTERNO IDENTICO AO SITE ORIGINAL -->
+  <section class="pag-banner" style="background-image: url('https://www.esel.com.br/uploads/paginas/1/thumb-2000-400/fa3424b83d5e7efc1a5f9366057dbd06.jpg');">
+    <div class="mascara"></div>
+    <div class="container">
+      <div class="grid-12 content" data-aos="fade-up" data-aos-offset="0">
+        <h2 class="top-tit primary subtitulo">{title}</h2>
+        <h1 class="titulo" style="font-weight: 700; color: #fff;">Esel - Esquadrias de Madeiras</h1>
+        <ul class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">{title}</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <!-- PÁGINA DE CONTEÚDO (TEMPLATE EM CONSTRUÇÃO) -->
+  <section class="secao secao-pag">
+    <div class="container">
+      <div class="center" style="text-align: center; padding: 80px 0;">
+        <h3 class="subtitulo primary" style="font-size: 24px; margin-bottom: 20px;">Página em Construção</h3>
+        <div class="texto" style="max-width: 650px; margin: 0 auto 35px auto; font-size: 18px; color: #666;">
+          <p>Esta página faz parte da estrutura de navegação do site <strong>Esel - Soluções em Madeira</strong> e está em fase de desenvolvimento.</p>
+        </div>
+        <div class="btn-container" style="display: flex; justify-content: center;">
+          <a href="/" class="btn btn-primario">
+            <span class="blob-effect">
+              <span class="blob-btn__inner">
+                <span class="blob-btn__blobs">
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                  <span class="blob-btn__blob"></span>
+                </span>
+              </span>
+            </span>Voltar para a Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+  <Modals />
+</Layout>

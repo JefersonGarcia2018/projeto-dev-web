@@ -1,0 +1,182 @@
+---
+// Header component
+---
+<header class="header header-full active">
+  <div class="container">
+    <div class="header-content">
+
+      <!-- MENU MOBILIE BUTTON -->
+      <span class="menu-btn-mobile" id="menu-btn-mobile"></span>
+
+      <!-- LOGO -->
+      <a href="/" title="Esel" class="header-logo">
+        <img src="/assets/7c8ed4e3a06870ca4f3deec989a7dac7.png" alt="Esel" />
+      </a>
+      <a href="/" title="Esel" class="header-logo white">
+        <img src="/assets/7c8ed4e3a06870ca4f3deec989a7dac7.png" alt="Esel" />
+      </a>
+
+      <!-- DIREITA -->
+      <div class="header-direita">
+
+        <!-- MENU LATERAL -->
+        <nav class="fdx-menu lateral">
+          <ul class="fdx-menu-1-level">
+            <li><a href="/">Home</a></li>
+            <li><a href="/quem-somos">Quem Somos</a></li>	
+            <li>
+              <a href="/produtos">Produtos<i class="las la-angle-down" style="margin-left: 7px;"></i></a>
+              <ul class="fdx-menu-2-level">
+                <li>
+                  <a class="has-sub" href="/produtos/portas-e-janelas">Portas e Janelas</a>
+                  <ul class="fdx-menu-3-level">
+                    <li>
+                      <a class="has-sub" href="/produtos/portas-e-janelas/portas">Portas</a>
+                      <ul class="fdx-menu-4-level">
+                        <li><a href="/produtos/portas-e-janelas/portas/portas-premium">Portas Premium</a></li>
+                        <li><a href="/produtos/portas-e-janelas/portas/portas-gold">Portas Gold</a></li>
+                        <li><a href="/produtos/portas-e-janelas/portas/portas-pop">Portas Pop</a></li>
+                        <li><a href="/produtos/portas-e-janelas/portas/portas-sacadas">Portas Sacadas</a></li>
+                        <li><a href="/produtos/portas-e-janelas/portas/portas-internas">Portas Internas</a></li>
+                      </ul>	
+                    </li>
+                    <li>
+                      <a class="has-sub" href="/produtos/portas-e-janelas/janelas">Janelas</a>
+                      <ul class="fdx-menu-4-level">
+                        <li><a href="/produtos/portas-e-janelas/janelas/janelas-gold">Janelas Gold</a></li>
+                        <li><a href="/produtos/portas-e-janelas/janelas/janelas-pop">Janelas Pop</a></li>
+                      </ul>	
+                    </li>
+                    <li>
+                      <a href="/produtos/portas-e-janelas/vitros">Vitrôs</a>
+                    </li>
+                  </ul>	
+                </li>
+                <li>
+                  <a href="/produtos/portas-internas">Portas Internas</a>
+                </li>
+                <li>
+                  <a href="/produtos/moveis-de-jardim">Móveis de Jardim</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/noticias">Novidades</a></li>
+            <li><a href="/contato">Fale Conosco</a></li>	
+            <li>
+              <a href="/minha-conta/entrar" class="btn btn-primario">
+                <span class="blob-effect">
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </span>Área do Lojista
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- BUSCA -->
+        <div class="header-search-container">
+          <a href="#" class="header-search-btn"><i class="las la-search"></i></a>
+          <div class="header-search-dropdown">
+            <form action="/acoes/app/produtos/buscando.php" method="GET" class="header-search-form">
+              <input class="campo" type="text" id="header-search-input" name="busca" placeholder="Buscar produtos..." required="" /> 
+              <span class="header-search-icon"><i class="las la-search"></i></span>
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <!-- //DIREITA -->
+
+      <!-- BOTÕES -->
+      <div class="header-botoes">	
+        <ul class="languagepicker roundborders large">
+          <a href="/?lang=pt">
+            <li><img src="/assets/pt.svg" alt="Português" />Português</li>
+          </a>
+          <a href="/?lang=en" title="English">
+            <li><img src="/assets/en.svg" alt="English" />English</li>
+          </a>
+          <a href="/?lang=es" title="Español">
+            <li><img src="/assets/es.svg" alt="Español" />Español</li>
+          </a>
+        </ul>
+      </div>
+      <!-- //BOTÕES -->
+
+    </div>
+  </div>
+</header>
+
+<!-- MENU MOBILE -->
+<div class="cd-dropdown-wrapper">
+  <nav class="cd-dropdown">
+    <ul class="cd-dropdown-content">
+      <li><a href="/">Home</a></li>
+      <li><a href="/quem-somos">Quem Somos</a></li>		
+
+      <!-- PRODUTOS -->
+      <li class="has-children">
+        <a href="#">Produtos</a>
+        <ul class="cd-secondary-dropdown is-hidden">
+          <li class="go-back"><a href="#0">Voltar</a></li>
+          <li class="see-all"><a href="/produtos">Produtos</a></li>
+          <li class="has-children">
+            <a href="#">Portas e Janelas</a>
+            <ul class="is-hidden">
+              <li class="go-back"><a href="#0">Voltar</a></li>
+              <li class="see-all"><a href="/produtos/portas-e-janelas">Portas e Janelas</a></li>
+              <li class="has-children">
+                <a href="#">Portas</a>
+                <ul class="is-hidden">
+                  <li class="go-back"><a href="#0">Voltar</a></li>
+                  <li class="see-all"><a href="/produtos/portas-e-janelas/portas">Portas</a></li>
+                  <li><a href="/produtos/portas-e-janelas/portas/portas-premium">Portas Premium</a></li>
+                  <li><a href="/produtos/portas-e-janelas/portas/portas-gold">Portas Gold</a></li>
+                  <li><a href="/produtos/portas-e-janelas/portas/portas-pop">Portas Pop</a></li>
+                  <li><a href="/produtos/portas-e-janelas/portas/portas-sacadas">Portas Sacadas</a></li>
+                  <li><a href="/produtos/portas-e-janelas/portas/portas-internas">Portas Internas</a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Janelas</a>
+                <ul class="is-hidden">
+                  <li class="go-back"><a href="#0">Voltar</a></li>
+                  <li class="see-all"><a href="/produtos/portas-e-janelas/janelas">Janelas</a></li>
+                  <li><a href="/produtos/portas-e-janelas/janelas/janelas-gold">Janelas Gold</a></li>
+                  <li><a href="/produtos/portas-e-janelas/janelas/janelas-pop">Janelas Pop</a></li>
+                </ul>
+              </li>
+              <li><a href="/produtos/portas-e-janelas/vitros">Vitrôs</a></li>
+            </ul>
+          </li>
+          <li><a href="/produtos/portas-internas">Portas Internas</a></li>
+          <li><a href="/produtos/moveis-de-jardim">Móveis de Jardim</a></li>
+        </ul>
+      </li>
+      <!-- //PRODUTOS -->
+      
+      <li><a href="/noticias">Novidades</a></li>	
+      <li><a href="/contato">Fale Conosco</a></li>
+      <li><a class="dest" href="/minha-conta/entrar">Área do Lojista</a></li>
+      <li class="lang-mobile">
+        <ul class="languagepicker roundborders large">
+          <a href="#">
+            <li><img src="/assets/pt.svg" alt="Português" />Português</li>
+          </a>
+          <a href="/?lang=en" title="English">
+            <li><img src="/assets/en.svg" alt="English" />English</li>
+          </a>
+          <a href="/?lang=es" title="Español">
+            <li><img src="/assets/es.svg" alt="Español" />Español</li>
+          </a>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</div>

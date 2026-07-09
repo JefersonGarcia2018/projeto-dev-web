@@ -1,0 +1,119 @@
+---
+import '../styles/style.css';
+import '../styles/styles__ltr.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = "Esel - Soluções em Madeira", 
+  description = "Encontre portas e janelas de madeira maciça na ESEL. Tradição desde 1969 em esquadrias sustentáveis com qualidade superior e acabamento impecável. Saiba mais!" 
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Ellos Design - Criação de Sites" />
+    <meta name="reply-to" content="falecom@esel.com.br" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#f29718" />
+
+    <!-- COMPARTILHAMENTO -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://www.esel.com.br/uploads/admin_logos/29/314033cdfd06addcf93e23074f2320d8.jpg" />
+    <link rel="canonical" href="https://www.esel.com.br/" />	
+    <meta property="og:url" content="https://www.esel.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://www.esel.com.br/uploads/admin_logos/29/314033cdfd06addcf93e23074f2320d8.jpg" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- SCHEMA -->
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org/",
+      "@type": "Organization",
+      "name": "Esel - Soluções em Madeira",
+      "url": "https://www.esel.com.br/",
+      "logo": "https://www.esel.com.br/uploads/admin_logos/29/314033cdfd06addcf93e23074f2320d8.jpg",
+      "image": "https://www.esel.com.br/uploads/admin_logos/29/314033cdfd06addcf93e23074f2320d8.jpg",
+      "email": "falecom@esel.com.br",
+      "description": "Encontre portas e janelas de madeira maciça na ESEL. Tradição desde 1969 em esquadrias sustentáveis com qualidade superior e acabamento impecável. Saiba mais!",
+      "address": "Rodovia Aurelio Francisco Marconatto, Km 22,2, Pavilhão A S/N Interior, Santa Helena - SC, 89915-000",
+      "telephone": "+554936330228",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+554936330228",
+        "contactOption": "https://www.esel.com.br/contato"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Esel - Soluções em Madeira",
+      "url": "https://www.esel.com.br/",
+      "description": "Encontre portas e janelas de madeira maciça na ESEL. Tradição desde 1969 em esquadrias sustentáveis com qualidade superior e acabamento impecável. Saiba mais!",
+      "image": "https://www.esel.com.br/uploads/admin_logos/29/314033cdfd06addcf93e23074f2320d8.jpg",
+      "headline": "Esel - Soluções em Madeira"
+    }
+    </script>
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-32-32/4fb5083e12598c6ee88e6b836be5cd79.png" />
+    <link rel="icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-32-32/4fb5083e12598c6ee88e6b836be5cd79.png" sizes="32x32" />
+    <link rel="icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-128-128/4fb5083e12598c6ee88e6b836be5cd79.png" sizes="128x128" />
+    <link rel="icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-180-180/4fb5083e12598c6ee88e6b836be5cd79.png" sizes="180x180" />
+    <link rel="icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-192-192/4fb5083e12598c6ee88e6b836be5cd79.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://www.esel.com.br/uploads/admin_logos/31/thumb-180-180/4fb5083e12598c6ee88e6b836be5cd79.png" sizes="180x180" />
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="/assets/css2" rel="stylesheet" />
+    
+    <!-- ÍCONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="/assets/js"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SDD8E9YFKL');
+    </script>
+    <style>
+      .produto-det-texto.texto table{
+        width: 100% !important;
+      }
+    </style>  
+  </head>
+
+  <body class="home-full">
+    <slot />
+
+    <!-- SCRIPTS -->
+    <script is:inline src="/assets/plugins.min.js"></script>
+    <script is:inline src="/assets/script.min.js"></script>
+    <script is:inline src="/assets/typed.umd.js"></script>
+    <script is:inline src="/assets/api.js"></script>
+  </body>
+</html>

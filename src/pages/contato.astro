@@ -1,0 +1,174 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<Layout title="Fale Conosco - Esel">
+  <Header />
+
+  <!-- BANNER -->
+  <section class="pag-banner" style="background-image: url('https://www.esel.com.br/uploads/paginas/3/thumb-2000-400/94af6dfe91954639ea666962a3e753db.jpg');">
+    <div class="mascara"></div>
+    <div class="container">
+      <div class="grid-12 content" data-aos="fade-up">
+        <h2 class="top-tit primary subtitulo">Fale Conosco</h2>
+        <h1 class="titulo" style="font-weight: 700; color: #fff;">Estamos à Disposição para Atender Você!</h1>
+        <ul class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //BANNER -->
+
+  <!-- PÁGINA -->
+  <section class="secao secao-pag">
+    <div class="container">
+
+      <!-- LATERAL / INFORMAÇÕES DE CONTATO -->
+      <div class="contato-lateral" data-aos="fade-up">
+
+        <!-- Item 1: Telefone/Whatsapp -->
+        <div class="contato-item grid-4 grid-m-6 grid-s-12">
+          <div class="contato-item-icon">
+            <img src="https://www.esel.com.br/app/assets/dist/img/phone-call.svg" alt="Telefone" />
+          </div>
+          <div class="contato-item-infos">
+            <div class="contato-item-tit">Entre em Contato</div>
+            <a href="tel:4936330228" class="contato-item-txt"> Telefone: <b>(49) 3633-0228</b></a>
+            <a href="/whatsapp.php" class="contato-item-txt"> Whatsapp: <b>(49) 99138-3939</b></a>
+          </div>				
+        </div>
+      
+        <!-- Item 2: Horário -->
+        <div class="contato-item grid-4 grid-m-6 grid-s-12">
+          <div class="contato-item-icon">
+            <img src="https://www.esel.com.br/app/assets/dist/img/alarm.svg" alt="Atendimento" />
+          </div>
+          <div class="contato-item-infos">
+            <div class="contato-item-tit">Horário de Funcionamento</div>
+            <div class="contato-item-txt truncated">De segunda à sexta, das 7:30h às 17:30h</div>
+            <a href="mailto:falecom@esel.com.br" class="contato-item-txt truncated">Email: <b>falecom@esel.com.br</b></a>
+          </div>				
+        </div>
+        
+        <!-- Item 3: Endereço -->
+        <div class="contato-item grid-4 grid-m-6 grid-s-12">
+          <div class="contato-item-icon">
+            <img src="https://www.esel.com.br/app/assets/dist/img/location.svg" alt="Endereço" />
+          </div>
+          <div class="contato-item-infos">
+            <div class="contato-item-tit">Endereço</div>
+            <a href="https://www.google.com/maps?q=Rodovia+Aurelio+Francisco+Marconatto%2C+Km+22%2C2%2C+Pavilh%C3%A3o+A+S%2FN+Interior%2C+Santa+Helena+-+SC%2C+89915-000" target="_blank" class="contato-item-txt">Rodovia Aurelio Francisco Marconatto, Km 22,2, Pavilhão A S/N Interior, Santa Helena - SC, 89915-000</a>
+          </div>			
+        </div>
+        
+      </div>
+      <!-- //LATERAL -->
+
+      <!-- CONTEÚDO / FORMULÁRIO -->
+      <div class="flex-center lista-form mb-3">
+
+        <!-- FORMULÁRIO -->
+        <form id="form-contato" action="https://www.esel.com.br/acoes/app/contato/envia_contato.php" method="post" class="grid-6 grid-m-12 grid-s-12 form-validation form-ajax enable-recaptcha form-contato" data-reset="true" data-acao="retorno-acao" data-aos="fade-up">
+
+          <div class="campo-container campo-icon">
+            <input type="text" name="nome" id="nome" maxlength="255" class="campo" data-parsley-trigger="change" placeholder="Digite seu nome" required /> 
+            <label class="icon" for="nome"><i class="las la-user"></i></label>
+          </div>
+
+          <div class="row">
+            <div class="grid-6 grid-m-6 grid-s-12 campo-container campo-icon">
+              <input type="email" name="email" id="email" maxlength="255" class="campo" data-parsley-trigger="change" placeholder="Digite seu e-mail" required /> 
+              <label class="icon" for="email"><i class="las la-envelope"></i></label>
+            </div>
+            <div class="grid-6 grid-m-6 grid-s-12 campo-container campo-icon">
+              <input type="tel" name="telefone" id="telefone" maxlength="255" class="campo" data-parsley-trigger="change" placeholder="Digite seu telefone" required /> 
+              <label class="icon" for="telefone"><i class="las la-phone"></i></label>
+            </div>
+          </div>
+
+          <div class="campo-container campo-icon">
+            <select id="assunto" name="assunto" class="campo" data-parsley-trigger="change" required>
+              <option value="" hidden>Selecione um assunto</option>
+              <option value="comercial">Comercial</option>
+              <option value="compras">Compras</option>
+              <option value="financeiro">Financeiro</option>
+              <option value="recursos-humanos">Recursos Humanos</option>
+            </select>
+            <i class="arrow"></i>
+            <label class="icon" for="assunto"><i class="las la-comment"></i></label>
+          </div>
+
+          <div class="campo-container campo-icon">
+            <textarea name="mensagem" id="mensagem" maxlength="1000" class="campo" rows="4" data-parsley-trigger="change" placeholder="Digite sua mensagem..." required></textarea> 
+            <label class="icon" for="mensagem"><i class="las la-envelope-open"></i></label>
+          </div>
+
+          <div class="btn-container">
+            <input type="text" name="cph1d3" style="display: none;" />
+            <input type="text" name="cpt1m3" value="1783615274" style="display: none;" />
+            <input type="hidden" name="extra" value='{"location":{"city":"Campo Grande","country":"Brasil","countryCode":"BR","query":"200.129.210.229","region":"MS","regionName":"Mato Grosso do Sul","status":"success"}}' />
+            <button type="submit" class="btn btn-primario outline">
+              <span class="blob-effect">
+                <span class="blob-btn__inner">
+                  <span class="blob-btn__blobs">
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                    <span class="blob-btn__blob"></span>
+                  </span>
+                </span>
+              </span>Enviar
+            </button>
+          </div>
+
+        </form>
+        <!-- //FORMULÁRIO -->
+
+        <!-- TEXTO DIREITA -->
+        <div class="right-txt-contato grid-6 grid-s-12">
+          <h3 class="top-tit left primary subtitulo">Tem dúvidas?</h3>
+          <h2 class="titulo left">Fale com Nossos Especialistas</h2>
+          <div class="texto">
+            <p><strong>Preencha o formulário ao lado e clique em enviar.</strong><br />
+            Responderemos sua mensagem o mais rápido possível!</p>
+          </div>
+
+          <!-- Redes sociais -->
+          <div class="redes-sociais-tit"><b>Siga-nos nas redes sociais!</b></div>
+          <div class="redes-sociais">
+            <a href="https://www.instagram.com/eselportasejanelas/" target="_blank" title="Instagram" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/eseloficial" target="_blank" title="Facebook" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@esel.solu%C3%A7%C3%B5es" target="_blank" title="Youtube" data-aos="zoom-in" data-aos-delay="500"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/eseloficial" target="_blank" title="LinkedIn" data-aos="zoom-in" data-aos-delay="700"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <!-- //Redes sociais -->
+
+        </div>
+
+      </div>
+      <!-- //CONTEÚDO -->
+
+      <!-- LOCALIZAÇÃO / GOOGLE MAPS -->
+      <h4 class="top-tit primary subtitulo">Localização</h4>
+      <h3 class="titulo">Encontre-nos no Google Maps</h3>
+
+      <div class="flex-center">
+        <div class="mapa grid-12">
+          <div class="contato-item-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.5941307769017!2d-53.63012252074397!3d-26.948078534392902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fa4c21101e3b69%3A0x290a251c92ae958c!2sESEL%20-%20Portas%20e%20Janelas!5e0!3m2!1spt-BR!2sbr!4v1755199089358!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div> 
+      </div>
+      
+    </div>
+  </section>
+  <!-- //PÁGINA -->
+
+  <Footer />
+  <Modals />
+</Layout>

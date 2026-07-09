@@ -1,0 +1,77 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Modals from '../components/Modals.astro';
+---
+
+<Layout title="Produtos - Esel">
+  <Header />
+
+  <!-- BANNER -->
+  <section class="pag-banner" style="background-image: url('https://www.esel.com.br/uploads/paginas/13/thumb-2000-400/e72a57a51e631fc00ad822d709167add.png');">
+    <div class="mascara"></div>
+    <div class="container">
+      <div class="grid-12 content" data-aos="fade-up">
+        <h3 class="subtitulo top-tit primary">Produtos</h3>
+        <h1 class="titulo" style="font-weight: 700; color: #fff;">Design, Qualidade e Tradição em Madeira</h1>
+        <ul class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- //BANNER -->
+
+  <!-- PÁGINA -->
+  <section class="secao secao-pag grey">
+    <div class="container">
+
+      <div class="flex-center list-products-page">
+
+        <!-- Categoria 1: Portas e Janelas -->
+        <a href="/produtos/portas-e-janelas" class="grid-4 grid-m-6 grid-s-12 servico">
+          <div class="servico-img">
+            <img class="shimmer lazyload" data-src="/assets/88fa9363ecb642fb5e9700cc33ae8b9f.jpg" src="/assets/88fa9363ecb642fb5e9700cc33ae8b9f.jpg" width="265px" height="331px" alt="Portas e Janelas" />
+          </div>
+          <div class="servico-infos">
+            <div class="servico-tit">Portas e Janelas</div>
+            <div class="servico-txt">Beleza e resistência em madeira maciça para seus espaços externos.</div>
+            <div class="servico-btn"><button class="btn btn-primario"></button></div>
+          </div>
+        </a>
+
+        <!-- Categoria 2: Portas Internas -->
+        <a href="/produtos/portas-internas" class="grid-4 grid-m-6 grid-s-12 servico">
+          <div class="servico-img">
+            <img class="shimmer lazyload" data-src="/assets/477eee2309ef70f31c0f87ec14a8d326.jpg" src="/assets/477eee2309ef70f31c0f87ec14a8d326.jpg" width="265px" height="331px" alt="Portas Internas" />
+          </div>
+          <div class="servico-infos">
+            <div class="servico-tit">Portas Internas</div>
+            <div class="servico-txt">Portas fabricadas em Lacca, Lâmina de madeira e opções em madeira maciça.</div>
+            <div class="servico-btn"><button class="btn btn-primario"></button></div>
+          </div>
+        </a>
+
+        <!-- Categoria 3: Móveis de Jardim -->
+        <a href="/produtos/moveis-de-jardim" class="grid-4 grid-m-6 grid-s-12 servico">
+          <div class="servico-img">
+            <img class="shimmer lazyload" data-src="/assets/d7d9ea41ab78452248a3d8def519cacf.png" src="/assets/d7d9ea41ab78452248a3d8def519cacf.png" width="265px" height="331px" alt="Móveis de Jardim" />
+          </div>
+          <div class="servico-infos">
+            <div class="servico-tit">Móveis de Jardim</div>
+            <div class="servico-txt">Soluções em madeira para viver o exterior com estilo</div>
+            <div class="servico-btn"><button class="btn btn-primario"></button></div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- //PÁGINA -->
+
+  <Footer />
+  <Modals />
+</Layout>

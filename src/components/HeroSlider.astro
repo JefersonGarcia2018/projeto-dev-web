@@ -1,0 +1,55 @@
+---
+// HeroSlider component
+---
+<section class="slide-home">
+  <div class="splide carousel-slide carousel-arrows-fade carousel-controls-white" data-slide-interval="5000" data-slide-progress="false" id="splide01">
+    <div class="splide__track" id="splide01-track">
+      <div class="splide__list" id="splide01-list">
+        <!-- Slide 1 -->
+        <div class="splide__slide" id="splide01-slide01">
+          <a href="#" class="carousel-slide-item carousel-slide-bg">
+            <!-- Background Desktop -->
+            <div class="hide-mobile carousel-slide-bg-img" style="background-image: url('https://www.esel.com.br/uploads/slide/1/thumb-2000-0/854a1a236976ba6307c48a879609816d.png');"></div>
+            <!-- Background Mobile -->
+            <div class="hide-desktop hide-tablet carousel-slide-bg-img" style="background-image: url('https://www.esel.com.br/uploads/slide/1/thumb-600-0/f01a3f4dde52882c8da8e521eeca4783.jpg');"></div>
+            
+            <!-- Conteúdo -->
+            <div class="carousel-slide-overlay center">
+              <div class="container carousel-slide-content">
+                <div class="subtitulo top-tit primary carousel-slide-subtit fade-up" data-slide-animation="fade-up" data-slide-animation-delay="200">Conheça a Linha INDOOR</div>
+                <div class="titulo carousel-slide-tit fade-up" data-slide-animation="fade-up" data-slide-animation-delay="200">
+                  Eleve o Padrão dos Seus Ambientes <br /> com <b id="typed" data-itens="Portas Sofisticadas, Acabamento Impecável, Tecnologia Italiana, Precisão Alemã, Design Exclusivo">Tecnologia Italiana</b>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-mouse">
+              <img src="/assets/scroll.png" alt="Scroll" />
+              <div class="field">
+                <div class="mouse"></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  // Inicialização do Typed.js após o carregamento da biblioteca
+  document.addEventListener('DOMContentLoaded', function() {
+    var typedEl = document.querySelector('#typed');
+    if (typedEl && typeof Typed !== 'undefined') {
+      var itens = typedEl.dataset.itens.split(",");
+      new Typed('#typed', {
+        strings: itens,
+        typeSpeed: 65,
+        backDelay: 2000,
+        backSpeed: 15,
+        smartBackspace: false,
+        loop: true
+      });
+    }
+  });
+</script>
