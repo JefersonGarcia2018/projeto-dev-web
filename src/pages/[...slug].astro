@@ -6,19 +6,19 @@ import Modals from '../components/Modals.astro';
 
 export function getStaticPaths() {
   const paths = [
-    { slug: 'produtos/portas-e-janelas', title: 'Portas e Janelas' },
-    { slug: 'produtos/portas-e-janelas/portas', title: 'Portas' },
-    { slug: 'produtos/portas-e-janelas/portas/portas-premium', title: 'Portas Premium' },
-    { slug: 'produtos/portas-e-janelas/portas/portas-gold', title: 'Portas Gold' },
-    { slug: 'produtos/portas-e-janelas/portas/portas-pop', title: 'Portas Pop' },
-    { slug: 'produtos/portas-e-janelas/portas/portas-sacadas', title: 'Portas Sacadas' },
-    { slug: 'produtos/portas-e-janelas/portas/portas-internas', title: 'Portas Internas' },
-    { slug: 'produtos/portas-e-janelas/janelas', title: 'Janelas' },
-    { slug: 'produtos/portas-e-janelas/janelas/janelas-gold', title: 'Janelas Gold' },
-    { slug: 'produtos/portas-e-janelas/janelas/janelas-pop', title: 'Janelas Pop' },
-    { slug: 'produtos/portas-e-janelas/vitros', title: 'Vitrôs' },
-    { slug: 'produtos/moveis-de-jardim', title: 'Móveis de Jardim' },
-    { slug: 'produtos/portas-internas', title: 'Portas Internas' },
+    { slug: 'produtos/portas-e-janelas', title: 'Sistemas & Apps Web' },
+    { slug: 'produtos/portas-e-janelas/portas', title: 'Backend & APIs' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-premium', title: 'Plataformas Enterprise' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-gold', title: 'Sistemas SaaS' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-pop', title: 'Micro-serviços' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-sacadas', title: 'Painéis Administrativos' },
+    { slug: 'produtos/portas-e-janelas/portas/portas-internas', title: 'Integrações de API' },
+    { slug: 'produtos/portas-e-janelas/janelas', title: 'Frontends Modernos' },
+    { slug: 'produtos/portas-e-janelas/janelas/janelas-gold', title: 'Next.js & React' },
+    { slug: 'produtos/portas-e-janelas/janelas/janelas-pop', title: 'Astro & Tailwind' },
+    { slug: 'produtos/portas-e-janelas/vitros', title: 'Single Page Apps (SPA)' },
+    { slug: 'produtos/moveis-de-jardim', title: 'E-commerce & Lojas Virtuais' },
+    { slug: 'produtos/portas-internas', title: 'Websites & Landing Pages' },
     { slug: 'trabalhe-conosco', title: 'Trabalhe Conosco' }
   ];
 
@@ -31,16 +31,16 @@ export function getStaticPaths() {
 const { title } = Astro.props;
 ---
 
-<Layout title={`${title} - Esel`}>
+<Layout title={`${title} - Jeferson Dev Full Stack`}>
   <Header />
 
   <!-- BANNER INTERNO IDENTICO AO SITE ORIGINAL -->
-  <section class="pag-banner" style="background-image: url('https://www.esel.com.br/uploads/paginas/1/thumb-2000-400/fa3424b83d5e7efc1a5f9366057dbd06.jpg');">
+  <section class="pag-banner" style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2000');">
     <div class="mascara"></div>
     <div class="container">
       <div class="grid-12 content" data-aos="fade-up" data-aos-offset="0">
         <h2 class="top-tit primary subtitulo">{title}</h2>
-        <h1 class="titulo" style="font-weight: 700; color: #fff;">Esel - Esquadrias de Madeiras</h1>
+        <h1 class="titulo" style="font-weight: 700; color: #fff;">Jeferson Dev Full Stack</h1>
         <ul class="breadcrumb">
           <li><a href="/">Home</a></li>
           <li><a href="#">{title}</a></li>
@@ -55,7 +55,7 @@ const { title } = Astro.props;
       <div class="center" style="text-align: center; padding: 80px 0;">
         <h3 class="subtitulo primary" style="font-size: 24px; margin-bottom: 20px;">Página em Construção</h3>
         <div class="texto" style="max-width: 650px; margin: 0 auto 35px auto; font-size: 18px; color: #666;">
-          <p>Esta página faz parte da estrutura de navegação do site <strong>Esel - Soluções em Madeira</strong> e está em fase de desenvolvimento.</p>
+          <p>Esta página faz parte da estrutura de navegação do site <strong>Jeferson Dev Full Stack</strong> e está em fase de desenvolvimento.</p>
         </div>
         <div class="btn-container" style="display: flex; justify-content: center;">
           <a href="/" class="btn btn-primario">

@@ -5,16 +5,16 @@ import Footer from '../components/Footer.astro';
 import Modals from '../components/Modals.astro';
 ---
 
-<Layout title="Novidades - Esel">
+<Layout title="Novidades - Jeferson Dev Full Stack">
   <Header />
 
   <!-- BANNER -->
-  <section class="pag-banner" style="background-image: url('https://www.esel.com.br/uploads/paginas/18/thumb-2000-400/167c62fdeb960da190a25d2fa2abd544.png');">
+  <section class="pag-banner" style="background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2000');">
     <div class="mascara"></div>
     <div class="container">
       <div class="grid-12 content" data-aos="fade-up">
-        <h2 class="top-tit primary subtitulo">Novidades</h2>
-        <h1 class="titulo" style="font-weight: 700; color: #fff;">Últimas Novidades</h1>
+        <h2 class="top-tit primary subtitulo">Blog</h2>
+        <h1 class="titulo" style="font-weight: 700; color: #fff;">Últimas Novidades do Blog de Tech</h1>
         <ul class="breadcrumb">
           <li><a href="/">Home</a></li>
           <li><a href="#">Novidades</a></li>
@@ -33,8 +33,9 @@ import Modals from '../components/Modals.astro';
         <div class="campo-container">
           <select id="prod-cat-mb" class="campo">
             <option value="/noticias">Todos posts</option>
-            <option value="#">Esquadrias de Madeira</option>
-            <option value="#">Dicas</option>
+            <option value="#">Desenvolvimento</option>
+            <option value="#">Engenharia</option>
+            <option value="#">Infraestrutura</option>
           </select>
           <i class="arrow"></i>
         </div>					
@@ -49,13 +50,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 1 -->
           <a href="/post/esquadrias-de-madeira-macica" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/cd4be24f7204cbc1645ff187765fe36f.jpg" src="/assets/cd4be24f7204cbc1645ff187765fe36f.jpg" width="380px" height="285px" alt="Esquadrias de madeira maciça" />
-              <span class="blog-cat">Esquadrias de Madeira</span>
+              <img class="shimmer lazyload" data-src="/assets/cd4be24f7204cbc1645ff187765fe36f.jpg" src="/assets/cd4be24f7204cbc1645ff187765fe36f.jpg" width="380px" height="285px" alt="Arquitetura Web Moderna em 2026" />
+              <span class="blog-cat">Engenharia</span>
             </figure>
             <div class="blog-p-infos">
               <div class="blog-p-data"><i class="las la-calendar-alt"></i>17 de Fevereiro<span></span><i class="las la-clock"></i> 2 min. de leitura</div>
-              <div class="blog-p-titulo">Esquadrias de madeira maciça</div>
-              <div class="blog-p-texto">A ESEL, empresa especializada em esquadrias de madeira, é referência no mercado desde 1969. Localizada no extremo oeste de Santa Catarina, a ESEL...</div>
+              <div class="blog-p-titulo">Arquitetura Web Moderna em 2026</div>
+              <div class="blog-p-texto">Jeferson Dev Full Stack, especializado em desenvolvimento web, é referência no mercado desde 2018. Focado em arquiteturas serverless e escalabilidade...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -63,13 +64,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 2 -->
           <a href="/post/uma-nova-linha-um-novo-comeco-ainda-mais-qualidade" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" width="380px" height="285px" alt="Uma nova linha, um novo começo, ainda mais qualidade. " />
-              <span class="blog-cat">Dicas</span>
+              <img class="shimmer lazyload" data-src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" width="380px" height="285px" alt="Uma nova arquitetura, um novo começo: migrando para o Astro" />
+              <span class="blog-cat">Desenvolvimento</span>
             </figure>
             <div class="blog-p-infos">
               <div class="blog-p-data"><i class="las la-calendar-alt"></i>06 de Fevereiro<span></span><i class="las la-clock"></i> 1 min. de leitura</div>
-              <div class="blog-p-titulo">Uma nova linha, um novo começo, ainda mais qualidade. </div>
-              <div class="blog-p-texto">INDOOR é a nossa mais recente aposta no mercado de portas, trazendo uma proposta inovadora e sofisticada para portas internas. Desenvolvida...</div>
+              <div class="blog-p-titulo">Uma nova arquitetura, um novo começo: migrando para o Astro</div>
+              <div class="blog-p-texto">Astro é a nossa mais recente aposta no mercado de desenvolvimento frontend, trazendo uma proposta inovadora de ilhas de interatividade...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -77,13 +78,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 3 -->
           <a href="/post/como-a-madeira-pode-transformar-pequenos-ambientes" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/d64f4ea92b84ca3a17e5376d340c44bf.png" src="/assets/d64f4ea92b84ca3a17e5376d340c44bf.png" width="380px" height="285px" alt="Como a Madeira Pode Transformar Pequenos Ambientes" />
-              <span class="blog-cat">Dicas</span>
+              <img class="shimmer lazyload" data-src="/assets/d64f4ea92b84ca3a17e5376d340c44bf.png" src="/assets/d64f4ea92b84ca3a17e5376d340c44bf.png" width="380px" height="285px" alt="Como a velocidade da página afeta suas conversões" />
+              <span class="blog-cat">Desenvolvimento</span>
             </figure>
             <div class="blog-p-infos">
-              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 1 min. de leitura</div>
-              <div class="blog-p-titulo">Como a Madeira Pode Transformar Pequenos Ambientes</div>
-              <div class="blog-p-texto">A madeira é uma aliada poderosa na decoração de espaços pequenos. Seus tons naturais e texturas trazem aconchego e amplitude...</div>
+              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 3 min. de leitura</div>
+              <div class="blog-p-titulo">Como a velocidade da página afeta suas conversões</div>
+              <div class="blog-p-texto">A velocidade de carregamento é uma aliada poderosa nas vendas. Sites rápidos melhoram a experiência do usuário e otimizam a pontuação no Google...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -91,13 +92,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 4 -->
           <a href="/post/vantagens-de-usar-madeira-macica-em-espacos-externos" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" width="380px" height="285px" alt="Vantagens de Usar Madeira Maciça em Espaços Externos" />
-              <span class="blog-cat">Esquadrias de Madeira</span>
+              <img class="shimmer lazyload" data-src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" width="380px" height="285px" alt="Vantagens de utilizar Serverless e Edge Computing" />
+              <span class="blog-cat">Infraestrutura</span>
             </figure>
             <div class="blog-p-infos">
-              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 1 min. de leitura</div>
-              <div class="blog-p-titulo">Vantagens de Usar Madeira Maciça em Espaços Externos</div>
-              <div class="blog-p-texto">A madeira maciça é a escolha perfeita para áreas externas, unindo beleza, resistência e durabilidade. Decks, pergolados e...</div>
+              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 2 min. de leitura</div>
+              <div class="blog-p-titulo">Vantagens de utilizar Serverless e Edge Computing</div>
+              <div class="blog-p-texto">A computação em borda e arquiteturas sem servidor trazem flexibilidade, otimização de custos e latência global extremamente baixa...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -105,13 +106,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 5 -->
           <a href="/post/como-escolher-a-porta-interna-ideal-para-cada-ambiente" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/4de92d223d058577122e4230a18caf0c.jpg" src="/assets/4de92d223d058577122e4230a18caf0c.jpg" width="380px" height="285px" alt="Como Escolher a Porta Interna Ideal para Cada Ambiente" />
-              <span class="blog-cat">Esquadrias de Madeira</span>
+              <img class="shimmer lazyload" data-src="/assets/4de92d223d058577122e4230a18caf0c.jpg" src="/assets/4de92d223d058577122e4230a18caf0c.jpg" width="380px" height="285px" alt="Como escolher o framework frontend ideal para seu projeto" />
+              <span class="blog-cat">Engenharia</span>
             </figure>
             <div class="blog-p-infos">
-              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 1 min. de leitura</div>
-              <div class="blog-p-titulo">Como Escolher a Porta Interna Ideal para Cada Ambiente</div>
-              <div class="blog-p-texto">Escolher a porta interna certa vai além da estética: ela influencia diretamente no conforto, funcionalidade e estilo do seu espaço. Para...</div>
+              <div class="blog-p-data"><i class="las la-calendar-alt"></i>14 de Agosto<span></span><i class="las la-clock"></i> 2 min. de leitura</div>
+              <div class="blog-p-titulo">Como escolher o framework frontend ideal para seu projeto</div>
+              <div class="blog-p-texto">Escolher a tecnologia certa vai além da estética: ela influencia no tempo de entrega, manutenibilidade e escalabilidade do seu sistema web...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -119,13 +120,13 @@ import Modals from '../components/Modals.astro';
           <!-- Post 6 -->
           <a href="/post/exporevestir-2025" class="grid-6 grid-m-6 grid-s-12 blog-p">           
             <figure class="blog-p-img">
-              <img class="shimmer lazyload" data-src="/assets/bd735c7c8b0fa6956561777b9cb8f926.jpg" src="/assets/bd735c7c8b0fa6956561777b9cb8f926.jpg" width="380px" height="285px" alt="Exporevestir 2025" />
-              <span class="blog-cat">Dicas</span>
+              <img class="shimmer lazyload" data-src="/assets/bd735c7c8b0fa6956561777b9cb8f926.jpg" src="/assets/bd735c7c8b0fa6956561777b9cb8f926.jpg" width="380px" height="285px" alt="Conclusão do WebSummit 2025" />
+              <span class="blog-cat">Desenvolvimento</span>
             </figure>
             <div class="blog-p-infos">
               <div class="blog-p-data"><i class="las la-calendar-alt"></i>25 de Março<span></span><i class="las la-clock"></i> 2 min. de leitura</div>
-              <div class="blog-p-titulo">Exporevestir 2025</div>
-              <div class="blog-p-texto">Encerramos nossa primeira edição da Exporevestir, e não poderíamos estar mais felizes! Foram cinco dias intensos,...</div>
+              <div class="blog-p-titulo">Conclusão do WebSummit 2025</div>
+              <div class="blog-p-texto">Encerramos nossa participação nas palestras do WebSummit 2025 trazendo diversos insights sobre desenvolvimento web com IA e integrações...</div>
               <div class="blog-p-link">Ver postagem <i class="las la-arrow-right"></i></div>
             </div>          
           </a>
@@ -140,8 +141,9 @@ import Modals from '../components/Modals.astro';
           <ul class="blog-categorias-btns hide-mobile hide-tablet" data-aos="fade-up">
             <li class="blog-categorias-tit subtitulo">Categorias</li>
             <li><a href="/noticias" class="cat-item cat-item-bd">Todos</a></li>
-            <li><a href="#" class="cat-item">Esquadrias de Madeira</a></li>
-            <li><a href="#" class="cat-item">Dicas</a></li>
+            <li><a href="#" class="cat-item">Desenvolvimento</a></li>
+            <li><a href="#" class="cat-item">Engenharia</a></li>
+            <li><a href="#" class="cat-item">Infraestrutura</a></li>
           </ul>
         
           <!-- Recentes -->
@@ -152,10 +154,10 @@ import Modals from '../components/Modals.astro';
               <!-- Recente 1 -->
               <a href="/post/uma-nova-linha-um-novo-comeco-ainda-mais-qualidade" class="blog-post-side">
                 <div class="post-side-img">
-                  <img class="shimmer lazyload" data-src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" width="380px" height="285px" alt="Uma nova linha" />
+                  <img class="shimmer lazyload" data-src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" src="/assets/19f1c665239846b0b27b6db70d75b9a8.png" width="380px" height="285px" alt="Uma nova arquitetura" />
                 </div>
                 <div>
-                  <h3 class="post-side-titulo">Uma nova linha, um novo começo, ainda mais qualidade. </h3>
+                  <h3 class="post-side-titulo">Uma nova arquitetura, um novo começo: migrando para o Astro</h3>
                   <div class="post-side-date">06 Fev, 2026</div>
                 </div>
               </a>
@@ -163,10 +165,10 @@ import Modals from '../components/Modals.astro';
               <!-- Recente 2 -->
               <a href="/post/como-escolher-a-porta-interna-ideal-para-cada-ambiente" class="blog-post-side">
                 <div class="post-side-img">
-                  <img class="shimmer lazyload" data-src="/assets/4de92d223d058577122e4230a18caf0c.jpg" src="/assets/4de92d223d058577122e4230a18caf0c.jpg" width="380px" height="285px" alt="Porta interna" />
+                  <img class="shimmer lazyload" data-src="/assets/4de92d223d058577122e4230a18caf0c.jpg" src="/assets/4de92d223d058577122e4230a18caf0c.jpg" width="380px" height="285px" alt="Como escolher o framework" />
                 </div>
                 <div>
-                  <h3 class="post-side-titulo">Como Escolher a Porta Interna Ideal para Cada Ambiente</h3>
+                  <h3 class="post-side-titulo">Como escolher o framework frontend ideal para seu projeto</h3>
                   <div class="post-side-date">14 Ago, 2025</div>
                 </div>
               </a>
@@ -174,10 +176,10 @@ import Modals from '../components/Modals.astro';
               <!-- Recente 3 -->
               <a href="/post/vantagens-de-usar-madeira-macica-em-espacos-externos" class="blog-post-side">
                 <div class="post-side-img">
-                  <img class="shimmer lazyload" data-src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" width="380px" height="285px" alt="Madeira maciça" />
+                  <img class="shimmer lazyload" data-src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" src="/assets/2f74b222f30cff39fed8c5a256ad128e.jpg" width="380px" height="285px" alt="Serverless & Edge" />
                 </div>
                 <div>
-                  <h3 class="post-side-titulo">Vantagens de Usar Madeira Maciça em Espaços Externos</h3>
+                  <h3 class="post-side-titulo">Vantagens de utilizar Serverless e Edge Computing</h3>
                   <div class="post-side-date">14 Ago, 2025</div>
                 </div>
               </a>

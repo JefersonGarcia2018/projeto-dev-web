@@ -2,20 +2,20 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Área do Lojista - Esel">
+<Layout title="Área do Cliente - Jeferson Dev Full Stack">
   <!-- BANNER -->
   <div class="login-banner" style="background-image: url('https://www.esel.com.br/app/assets/dist/img/bg3.png'); min-height: 100vh; display: flex; align-items: center; justify-content: center;">
     <span class="mascara"></span>
     <div class="login-banner-container" data-aos="fade-up">
-      <a href="/" title="Esel" class="login-banner-logo">
-        <img src="/assets/7c8ed4e3a06870ca4f3deec989a7dac7.png" alt="Esel" />
+      <a href="/" title="Jeferson Dev Full Stack" class="login-banner-logo">
+        <span style="font-size: 24px; font-weight: 800; color: #fff;">JEFERSON DEV</span>
       </a>
       
       <!-- FORMULÁRIO -->
-      <form id="form-login" action="https://www.esel.com.br/acoes/app/usuarios/login.php" method="post" class="login-form center form-validation form-ajax enable-recaptcha" data-reset="true" data-acao="retorno" novalidate="">
+      <form id="form-login" action="#" method="post" class="login-form center form-validation" data-reset="true" novalidate="">
         <div class="login-form-container" data-aos="fade-up">
 
-          <h1 class="titulo">Área do Lojista</h1>
+          <h1 class="titulo">Área do Cliente</h1>
           <div class="texto center mb-2">Entre com seu e-mail e senha</div>
 
           <div class="campo-container campo-icon">
@@ -33,7 +33,7 @@ import Layout from '../../layouts/Layout.astro';
           </div>
           
           <div class="btn-container">
-            <input type="hidden" name="retorno" value="https://www.esel.com.br/minha-conta/entrar" />
+            <input type="hidden" name="retorno" value="http://localhost:3000/minha-conta/entrar" />
             <button type="submit" id="entrar" class="btn btn-full btn-primario btn-pulse">
               <span class="blob-effect">
                 <span class="blob-btn__inner">
@@ -71,9 +71,9 @@ import Layout from '../../layouts/Layout.astro';
         <div class="texto mb-1">
           <p>Esqueceu a sua senha? Não tem problema, basta nos informar o endereço de e-mail utilizado no momento em que você se cadastrou que nós lhe enviaremos um e-mail com as instruções para você definir uma nova senha.</p>
         </div>
-        <form id="form-recuperacao" action="https://www.esel.com.br/acoes/app/usuarios/envia_email_recuperacao.php" method="post" class="form-validation form-ajax enable-recaptcha" data-reset="true" data-modal="modal-recuperacao" novalidate="">
+        <form id="form-recuperacao" action="#" method="post" class="form-validation" data-reset="true" data-modal="modal-recuperacao" novalidate="">
           <div class="campo-container campo-icon">
-            <input type="email" name="email" id="email_recuperacao" maxlength="255" class="campo" placeholder="Digite seu e-mail de cadastro" required="" data-parsley-trigger="change" data-parsley-remote="https://www.esel.com.br/acoes/app/usuarios/verifica_email_recuperacao.php" data-parsley-remote-options="{ &quot;type&quot;: &quot;POST&quot; }" data-parsley-remote-validator="remote" data-parsley-remote-message="Este endereço de e-mail não foi encontrado em nosso sistema." /> 
+            <input type="email" name="email" id="email_recuperacao" maxlength="255" class="campo" placeholder="Digite seu e-mail de cadastro" required="" /> 
             <label class="icon" for="email_recuperacao"><i class="las la-envelope"></i></label>
           </div>
           <div class="modal-btn center" style="margin-top: 0px;">
@@ -104,17 +104,17 @@ import Layout from '../../layouts/Layout.astro';
       </div>
       <div class="modal-body">
         <div class="texto center mb-2">
-          Preencha os dados abaixo para realizar o cadastro e visualizar os valores do nosso catálogo
+          Preencha os dados abaixo para realizar o cadastro e acessar nosso painel de projetos.
         </div>
-        <form id="form-contato-modal" action="https://www.esel.com.br/acoes/app/usuarios/cadastro.php" method="post" class="form-validation form-ajax enable-recaptcha" data-reset="true" data-acao="retorno-acao" data-modal="modal-contato" novalidate="">
+        <form id="form-contato-modal" action="#" method="post" class="form-validation" data-reset="true" data-acao="retorno-acao" data-modal="modal-contato" novalidate="">
           <div class="radio-input">
             <label>
-              <input value="Sou Lojista" name="tipo" id="tipo1" type="radio" checked="" />
-              <span>Sou Lojista</span>
+              <input value="Sou Empresa" name="tipo" id="tipo1" type="radio" checked="" />
+              <span>Sou Empresa</span>
             </label>
             <label>
-              <input value="Sou Construtora" name="tipo" id="tipo2" type="radio" />
-              <span>Sou Construtora</span>
+              <input value="Pessoa Física" name="tipo" id="tipo2" type="radio" />
+              <span>Pessoa Física</span>
             </label>
             <span class="selection"></span>
           </div>
@@ -125,7 +125,7 @@ import Layout from '../../layouts/Layout.astro';
               <label class="icon" for="md-nome"><i class="las la-user"></i></label>
             </div>
             <div class="grid-6 grid-m-6 grid-s-12 campo-container campo-icon">
-              <input type="text" name="razao_social" id="md-razao_social" maxlength="255" class="campo" placeholder="Razão Social" required="" />
+              <input type="text" name="razao_social" id="md-razao_social" maxlength="255" class="campo" placeholder="Empresa / Organização" required="" />
               <label class="icon" for="md-razao_social"><i class="las la-user"></i></label>
             </div>
           </div>
@@ -142,14 +142,11 @@ import Layout from '../../layouts/Layout.astro';
           </div>
 
           <div class="campo-container campo-icon">
-            <textarea name="endereco" id="md-endereco" maxlength="1000" class="campo" rows="4" placeholder="Endereço" required=""></textarea>
+            <textarea name="endereco" id="md-endereco" maxlength="1000" class="campo" rows="4" placeholder="Endereço / Localidade" required=""></textarea>
             <label class="icon" for="md-endereco"><i class="las la-map-marker"></i></label>        
           </div>
 
           <div class="btn-container">
-            <input type="text" name="cph1d3" style="display: none;" />
-            <input type="text" name="cpt1m3" value="1783610850" style="display: none;" />
-            <input type="hidden" name="extra" value='{"location":{"city":"Campo Grande","country":"Brasil","countryCode":"BR","query":"200.129.210.229","region":"MS","regionName":"Mato Grosso do Sul","status":"success"}}' />
             <button type="submit" class="btn btn-primario">
               <span class="blob-effect">
                 <span class="blob-btn__inner">
@@ -160,7 +157,7 @@ import Layout from '../../layouts/Layout.astro';
                     <span class="blob-btn__blob"></span>
                   </span>
                 </span>
-              </span>Ver Valores
+              </span>Solicitar Acesso
             </button>
           </div>
         </form>
@@ -170,5 +167,5 @@ import Layout from '../../layouts/Layout.astro';
 
   <!-- Voltar ao topo e Configs base -->
   <div class="gotop"></div>
-  <span id="infos" data-url-base="https://www.esel.com.br/" data-recaptchakey="6LcFEOQpAAAAAI7Klmb2l1mKRnGf_ff6VdMk19F7"></span>
+  <span id="infos" data-url-base="http://localhost:3000/" data-recaptchakey="6LcFEOQpAAAAAI7Klmb2l1mKRnGf_ff6VdMk19F7"></span>
 </Layout>
